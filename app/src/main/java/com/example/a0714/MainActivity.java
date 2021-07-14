@@ -10,14 +10,15 @@ import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     TextView text1, text2;
-    CheckBox chkagree;
+    Switch chkagree;
     RadioGroup rgroup1;
-    RadioButton rdodog, rdocat, rdorabbit;
+    RadioButton rdoo, rdop, rdoq;
     Button btnok;
     ImageView imgpet;
 
@@ -31,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
         chkagree=findViewById(R.id.chkagree);
         text2=findViewById(R.id.text2);
         rgroup1=findViewById(R.id.rgroup1);
-        rdodog=findViewById(R.id.rdodog);
-        rdocat=findViewById(R.id.rdocat);
-        rdorabbit=findViewById(R.id.rdorabbit);
+        rdoo=findViewById(R.id.rdoo);
+        rdop=findViewById(R.id.rdop);
+        rdoq=findViewById(R.id.rdoq);
         btnok=findViewById(R.id.btnok);
         imgpet=findViewById(R.id.imgpet);
 
@@ -57,17 +58,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 switch (rgroup1.getCheckedRadioButtonId()){
-                    case R.id.rdodog:
-                        imgpet.setImageResource(R.drawable.dog);
+                    case R.id.rdoo:
+                        imgpet.setImageResource(R.drawable.oreo);
                         break;
-                    case R.id.rdocat:
-                        imgpet.setImageResource(R.drawable.cat);
+                    case R.id.rdop:
+                        imgpet.setImageResource(R.drawable.pie);
                         break;
-                    case R.id.rdorabbit:
-                        imgpet.setImageResource(R.drawable.rabbit);
+                    case R.id.rdoq:
+                        imgpet.setImageResource(R.drawable.q10);
                         break;
-                    default:
-                        Toast.makeText(MainActivity.this, "동물 먼저 선택하세요", Toast.LENGTH_SHORT).show();
                 }
             }
         });

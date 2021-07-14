@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:text="선택을 하시겠습니까?" />
 
-    <CheckBox
+    <Switch
         android:id="@+id/chkagree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,7 +21,7 @@
         android:id="@+id/text2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="좋아하는 애완동물은?"
+        android:text="좋아하는 안드로이드 버전은?"
         android:visibility="invisible" />
 
     <RadioGroup
@@ -31,22 +31,22 @@
         android:visibility="invisible">
 
         <RadioButton
-            android:id="@+id/rdodog"
+            android:id="@+id/rdoo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="강아지" />
+            android:text="오레오(8.0)" />
 
         <RadioButton
-            android:id="@+id/rdocat"
+            android:id="@+id/rdop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="고양이" />
+            android:text="파이(9.0)" />
 
         <RadioButton
-            android:id="@+id/rdorabbit"
+            android:id="@+id/rdoq"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="토끼" />
+            android:text="Q(10.0)" />
     </RadioGroup>
 
     <Button
